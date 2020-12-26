@@ -1,0 +1,12 @@
+include("../roblib.jl")
+function mar_perim(a)
+    num_steps = through_rectangles_into_angle(a, (Down, Left))
+
+    side = Up
+    for i in 0:1:3
+        putmarkers!(a, side)
+        side = right(side)
+    end
+
+    movements!(a, (Up, Right), reverse(num_steps))
+end
