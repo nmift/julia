@@ -1,4 +1,4 @@
-include("../tutor.jl")
+include("../tutors.jl")
 
 function mark_kross(r)
     side = Up
