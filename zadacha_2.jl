@@ -1,4 +1,4 @@
-include("../tutor.jl")
+include("../tutors.jl")
 function mark_perimeter(r)
     num_steps = through_rectangles_into_angle(r, (Down, Left))
 
